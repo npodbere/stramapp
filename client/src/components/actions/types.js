@@ -1,0 +1,6 @@
+export const UPDATE_AUTH = 'UPDATE_AUTH'
+export const CREATE_STREAM = 'CREATE_STREAM'
+export const GET_STREAM = 'GET_STREAM'
+export const GET_STREAMS = 'GET_STREAMS'
+export const UPDATE_STREAM = 'UPDATE_STREAM'
+export const DELETE_STREAM = 'DELETE_STREAM'
