@@ -11,6 +11,14 @@ export const signInOutTry = (isSignedIn, id) => {
     }
 }
 
+export const openCloseModal = (id = null, title = "") => (dispatch, getState) => {
+    const modalState = getState().modal.showModal
+    dispatch ({
+        type: "MODAL",
+        payload: {showModal:!modalState, id, title}
+    })
+}
+
 export const createStream = (formValues) => async (dispatch, getState) => {
     const userID = getState().oauth.id
     const response = await streams.post('/streams', {...formValues, userID})
@@ -37,4 +45,5 @@ export const getStreams = () => async dispatch => {
  export const deleteStream = id => async dispatch => {
      await streams.delete(`/streams/${id}`)
      dispatch({type: DELETE_STREAM, payload: id})
+     dispatch(openCloseModal())
  }

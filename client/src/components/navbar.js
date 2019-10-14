@@ -20,10 +20,6 @@ class Navbar extends React.Component {
     render() {
         return( 
             <NavbarContainer>
-                <Link className="navButton" to="/streams/show">
-                    Streamer
-                </Link>
-
                 <Link className="navButton" to="/">
                     Streams
                 </Link>

@@ -89,8 +89,8 @@ body {
 
 .button {
     padding: 10px;
-    color: blue;
-    background-color: yellow;
+    color: white;
+    background-color: red;
     border: none;
     border-radius: 100px;
     cursor: pointer;
@@ -99,9 +99,64 @@ body {
 
 .button-1 {
     margin-right: 15px;
+    background-color: orange;
 }
 
 
 .button:hover {
-    background-color: red;
+    background-color: blue;
+}
+
+.modalBackground {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 9999;
+}
+
+.modalContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    padding: 10px 30px 30px 30px;
+    width: 37vw;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.modalButtonContainer{
+    align-self: flex-end;
+}
+
+.modalName {
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.modalDescription{
+    margin-bottom: 15px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid black;
+}
+
+.showTitle {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    font-size: 40px;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.showDescription{
+
+}
+.showContainer{
+    padding: 30px;
 }
